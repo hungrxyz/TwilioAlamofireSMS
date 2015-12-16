@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		162B7201F5CF8A181BB86AE7 /* Pods_TwilioAlamofireSMS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09F5B3AF07E32783860CA674 /* Pods_TwilioAlamofireSMS.framework */; };
 		FA065A3E1C217FC800C76206 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA065A3D1C217FC800C76206 /* AppDelegate.swift */; };
 		FA065A401C217FC800C76206 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA065A3F1C217FC800C76206 /* ViewController.swift */; };
 		FA065A431C217FC800C76206 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA065A411C217FC800C76206 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09F5B3AF07E32783860CA674 /* Pods_TwilioAlamofireSMS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwilioAlamofireSMS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FCCF86DA3D3FF333B99413C /* Pods-TwilioAlamofireSMS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwilioAlamofireSMS.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwilioAlamofireSMS/Pods-TwilioAlamofireSMS.release.xcconfig"; sourceTree = "<group>"; };
+		9B30624D8B4E85C0EB9DC3A4 /* Pods-TwilioAlamofireSMS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwilioAlamofireSMS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwilioAlamofireSMS/Pods-TwilioAlamofireSMS.debug.xcconfig"; sourceTree = "<group>"; };
 		FA065A3A1C217FC800C76206 /* TwilioAlamofireSMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwilioAlamofireSMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA065A3D1C217FC800C76206 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA065A3F1C217FC800C76206 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				162B7201F5CF8A181BB86AE7 /* Pods_TwilioAlamofireSMS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		066E43C48AA83EBC1729E3EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B30624D8B4E85C0EB9DC3A4 /* Pods-TwilioAlamofireSMS.debug.xcconfig */,
+				4FCCF86DA3D3FF333B99413C /* Pods-TwilioAlamofireSMS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B92105EDC5684F2C9028A9B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09F5B3AF07E32783860CA674 /* Pods_TwilioAlamofireSMS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA065A311C217FC800C76206 = {
 			isa = PBXGroup;
 			children = (
 				FA065A3C1C217FC800C76206 /* TwilioAlamofireSMS */,
 				FA065A3B1C217FC800C76206 /* Products */,
+				066E43C48AA83EBC1729E3EE /* Pods */,
+				B92105EDC5684F2C9028A9B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA065A4C1C217FC800C76206 /* Build configuration list for PBXNativeTarget "TwilioAlamofireSMS" */;
 			buildPhases = (
+				837197CFF30FB42622A9101E /* Check Pods Manifest.lock */,
 				FA065A361C217FC800C76206 /* Sources */,
 				FA065A371C217FC800C76206 /* Frameworks */,
 				FA065A381C217FC800C76206 /* Resources */,
+				6CE65220481FE60F56E0BFC7 /* Embed Pods Frameworks */,
+				46D15A34B4D125B9FB42CFA7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46D15A34B4D125B9FB42CFA7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwilioAlamofireSMS/Pods-TwilioAlamofireSMS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CE65220481FE60F56E0BFC7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwilioAlamofireSMS/Pods-TwilioAlamofireSMS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		837197CFF30FB42622A9101E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA065A361C217FC800C76206 /* Sources */ = {
@@ -245,6 +320,7 @@
 		};
 		FA065A4D1C217FC800C76206 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B30624D8B4E85C0EB9DC3A4 /* Pods-TwilioAlamofireSMS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TwilioAlamofireSMS/Info.plist;
@@ -256,6 +332,7 @@
 		};
 		FA065A4E1C217FC800C76206 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FCCF86DA3D3FF333B99413C /* Pods-TwilioAlamofireSMS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TwilioAlamofireSMS/Info.plist;
@@ -284,6 +361,7 @@
 				FA065A4E1C217FC800C76206 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
